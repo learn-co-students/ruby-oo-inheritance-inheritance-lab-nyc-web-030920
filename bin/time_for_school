@@ -18,3 +18,20 @@ some_knowledge = avi.teach
 steve.learn(some_knowledge)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+
+jim = User.new
+jim.first_name = "James"
+jim.last_name = "Kirk"
+
+#jim.learn(some_knowledge) #jim was made from the User class so he doesn't have the methods available in the subclasses Teacher or Student. So he can't learn
+
+steve.learn(some_knowledge)
+
+michelle = Student.new
+michelle.first_name = "Michelle"
+michelle.last_name = "Obama"
+
+michelle.learn(some_knowledge)
+
+puts "Michelle just learned this important knowledge: '#{michelle.knowledge.first}' from Avi"
+
